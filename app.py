@@ -13,7 +13,7 @@ def home():
 
 
 @app.route('/about_us')
-def home():
+def about_us():
     return render_template("about_us.html")
 
 
