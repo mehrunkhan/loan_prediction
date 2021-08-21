@@ -12,6 +12,11 @@ def home():
     return render_template("index.html")
 
 
+@app.route('/about_us')
+def home():
+    return render_template("about_us.html")
+
+
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():
     if request.method == 'POST':
@@ -41,7 +46,7 @@ def predict():
 
         prediction = model.predict([[code_gender, flag_own_car, flag_own_realty, cnt_children, amt_income_total,
                                      desired_credit, name_education_type, name_family_status, name_housing_type,
-                                     -days_birth/365, flag_work_phone,
+                                     -days_birth / 365, flag_work_phone,
                                      flag_cont_mobile, occupation_type, cnt_fam_members, reg_region_not_work_region,
                                      -days_last_phone_change, document_passport, document_visa_or_resident_permit,
                                      document_tax_identification_number, document_city_registration,
