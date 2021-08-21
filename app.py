@@ -4,7 +4,7 @@ import pickle
 import numpy as np
 
 app = Flask(__name__)
-model = pickle.load(open('data/logistic_model.sav', 'rb'))
+model = pickle.load(open('data/decision_tree_model.sav', 'rb'))
 
 
 @app.route('/')
