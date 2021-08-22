@@ -7,21 +7,6 @@ import scipy.stats as stats
 # load data to pandas dataframe
 raw_data = pd.read_csv("../data/dataset_after_column_selection.csv", index_col=None)
 
-# Rename columns
-raw_data.rename(
-    columns=({'FLAG_DOCUMENT_2': 'Document_Passport', 'FLAG_DOCUMENT_3': 'Document_Visa/Resident permit'}),
-    inplace=True,
-)
-raw_data.rename(
-    columns=(
-        {'FLAG_DOCUMENT_4': 'Document_Tax_identification_number', 'FLAG_DOCUMENT_5': 'Document_City_registration'}),
-    inplace=True)
-raw_data.rename(
-    columns=({'FLAG_DOCUMENT_6': 'Document_Matriculation_number', 'FLAG_DOCUMENT_7': 'Document_Social_security_number',
-              'FLAG_DOCUMENT_8': 'Document_University_Info', 'AMT_CREDIT': 'Desired_Credit',
-              'TARGET': 'Loan_Status'}),
-    inplace=True,
-)
 raw_data.rename(
     columns=({'Document_Visa/Resident permit': 'Document_Visa_or_Resident_permit'}),
     inplace=True,
@@ -79,18 +64,6 @@ raw_data['CNT_FAM_MEMBERS'] = raw_data['CNT_FAM_MEMBERS'].mask(
 raw_data['CNT_CHILDREN'] = raw_data['CNT_CHILDREN'].mask(
     raw_data['CNT_CHILDREN'] > 5, 3)
 
-raw_data['Document_Passport'] = np.random.choice(2, raw_data.shape[0],
-                                                 p=[.20, .80])
-raw_data['Document_Tax_identification_number'] = np.random.choice(2,
-                                                                  raw_data.shape[
-                                                                      0],
-                                                                  p=[.20, .80])
-raw_data['Document_City_registration'] = np.random.choice(2, raw_data.shape[0],
-                                                          p=[.35, .65])
-raw_data['Document_Social_security_number'] = np.random.choice(2,
-                                                               raw_data.shape[0],
-                                                               p=[.20, .80])
-
 
 # All columns name is turned from upper case to lower case, and here we call a function named clean_data
 def clean_data():
@@ -99,5 +72,3 @@ def clean_data():
     raw_data.columns = column_name
     return raw_data
 
-
-print()

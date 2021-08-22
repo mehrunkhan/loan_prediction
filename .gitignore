@@ -1,3 +1,5 @@
 venv
 .idea
 *.csv
+extra.py
+random_forest_model.pkl
