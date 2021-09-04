@@ -29,8 +29,8 @@ raw_data.drop('ORGANIZATION_TYPE', inplace=True, axis=1)
 raw_data.drop('FLAG_MOBIL', inplace=True, axis=1)
 raw_data.drop('DAYS_EMPLOYED', inplace=True, axis=1)
 raw_data.drop('REGION_RATING_CLIENT', inplace=True, axis=1)
+raw_data.drop('REG_REGION_NOT_WORK_REGION', inplace=True, axis=1)
 
-print(raw_data.REG_REGION_NOT_WORK_REGION.value_counts())
 
 # Multiply 10 with AMT_INCOME_TOTAL column for synchronizing it with other column's value
 raw_data["AMT_INCOME_TOTAL"] = 10 * raw_data["AMT_INCOME_TOTAL"]
@@ -71,4 +71,6 @@ def clean_data():
     column_name = [i.lower() for i in column_name]
     raw_data.columns = column_name
     return raw_data
+
+print()
 

@@ -29,7 +29,7 @@
         <form action='/predict' method='POST'>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">Please Select Your Gender</label>
-                <select class="form-select" id="code_gender" name="code_gender" aria-label="Default select example" required>
+                <select class="form-select" id="Gender" name="Gender" aria-label="Default select example" required>
                     <option selected value="1">-- select gender --</option>
                     <option value="1">Male</option>
                     <option value="2">Female</option>
@@ -37,7 +37,7 @@
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">Do you have car? </label>
-                <select class="form-select" id="flag_own_car" name="flag_own_car" aria-label="Default select example" required>
+                <select class="form-select" id="OwnCar" name="OwnCar" aria-label="Default select example" required>
                     <option selected value="0">-- do you have own car --</option>
                     <option value="1">Yes</option>
                     <option value="0">No</option>
@@ -45,7 +45,7 @@
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">Do you have realty</label>
-                <select class="form-select" id="flag_own_realty" name="flag_own_realty"
+                <select class="form-select" id="OwnRealty" name="OwnRealty"
                         aria-label="Default select example" required>
                     <option selected value="0">-- do you have own realty --</option>
                     <option value="1">Yes</option>
@@ -55,7 +55,7 @@
 
             <div class="mb-3">
                 <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">How many Children do you have?</label>
-                <select class="form-select" id="cnt_children" name="cnt_children"
+                <select class="form-select" id="ChildrenCount" name="ChildrenCount"
                         aria-label="Default select example" required>
 
                     <option value="0">0</option>
@@ -69,18 +69,18 @@
 
             <div class="mb-3">
                 <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">Total income</label>
-                <input type="number" class="form-control" id="amt_income_total" name="amt_income_total"
+                <input type="number" class="form-control" id="TotalIncome" name="TotalIncome"
                        placeholder="Applicant Income" required>
             </div>
 
             <div class="mb-3">
                 <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">Desired credit amount</label>
-                <input type="number" class="form-control" id="desired_credit" name="desired_credit" placeholder="desired credit">
+                <input type="number" class="form-control" id="DesiredCredit" name="DesiredCredit" placeholder="desired credit">
             </div>
 
             <div class="mb-3">
                 <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">Highest level of eduction </label>
-                <select class="form-select" id="name_education_type" name="name_education_type"
+                <select class="form-select" id="HighestEducation" name="HighestEducation"
                         aria-label="Default select example" required>
 
                     <option value="1">Secondary or secondary special</option>
@@ -93,7 +93,7 @@
 
             <div class="mb-3">
                 <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">Family Status</label>
-                <select class="form-select" id="name_family_status" name="name_family_status"
+                <select class="form-select" id="FamilyStatus" name="FamilyStatus"
                         aria-label="Default select example" required>
 
                     <option value="1">Married</option>
@@ -107,7 +107,7 @@
 
             <div class="mb-3">
                 <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">Please select your housing type</label>
-                <select class="form-select" id="name_housing_type" name="name_housing_type"
+                <select class="form-select" id="HousingType" name="HousingType"
                         aria-label="Default select example" required>
 
                     <option value="1">House or apartment</option>
@@ -121,12 +121,12 @@
 
             <div class="mb-3">
                 <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">Age</label>
-                <input type="number" class="form-control" id="days_birth" name="days_birth" placeholder="days_birth" required>
+                <input type="number" class="form-control" id="DaysBirth" name="DaysBirth" placeholder="days_birth" required>
             </div>
 
             <div class="mb-3">
                 <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">Do you have work phone?</label>
-                <select class="form-select" id="flag_work_phone" name="flag_work_phone"
+                <select class="form-select" id="WorkPhone" name="WorkPhone"
                         aria-label="Default select example" required>
 
                     <option value="1">Yes</option>
@@ -135,7 +135,7 @@
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">Have you taken any contract phone?</label>
-                <select class="form-select" id="flag_cont_mobile" name="flag_cont_mobile"
+                <select class="form-select" id="ContractMobile" name="ContractMobile"
                         aria-label="Default select example" required>
 
                     <option value="1">Yes</option>
@@ -145,7 +145,7 @@
 
             <div class="mb-3">
                 <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">Occupation</label>
-                <select class="form-select" id="occupation_type" name="occupation_type"
+                <select class="form-select" id="Occupation" name="Occupation"
                         aria-label="Default select example" required>
                     <option value="1">Production_Worker</option>
                     <option value="2">Laborers</option>
@@ -169,7 +169,7 @@
 
             <div class="mb-3">
                 <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">Family members count</label>
-                <select class="form-select" id="cnt_fam_members" name="cnt_fam_members"
+                <select class="form-select" id="FamilyMembersCount" name="FamilyMembersCount"
                         aria-label="Default select example" required>
                     <option value="1">1</option>
                     <option value="2"> 2</option>
@@ -178,44 +178,27 @@
                     <option value="5">5+</option>
                 </select>
             </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">Do you work in your registered region?</label>
-                <select class="form-select" id="reg_region_not_work_region" name="reg_region_not_work_region"
-                        aria-label="Default select example" required>
-
-                    <option value="1">Yes</option>
-                    <option value="0">No</option>
-                </select>
-            </div>
 
              <div class="mb-3">
                 <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">Have you recently changed your number? If yes, please submit
                 approx. the number of days you are using your new phone.</label>
-                <input type="number" class="form-control" id="days_last_phone_change" name="days_last_phone_change"
+                <input type="number" class="form-control" id="DaysLastPhoneChange" name="DaysLastPhoneChange"
                        placeholder="approximate days" required>
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">Passport uploaded</label>
-                <select class="form-select" id="document_passport" name="document_passport"
+                <select class="form-select" id="Passport" name="Passport"
                         aria-label="Default select example" required>
                     <option selected>-- document_passport --</option>
                     <option value="1">Yes</option>
                     <option value="0">No</option>
                 </select>
             </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">Resident permit uploaded</label>
-                <select class="form-select" id="document_visa_or_resident_permit"
-                        name="document_visa_or_resident_permit" aria-label="Default select example" required>
-                    <option selected>-- document_visa_or_resident_permit --</option>
-                    <option value="1">Yes</option>
-                    <option value="0">No</option>
-                </select>
-            </div>
+
             <div class="mb-3">
                 <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">Tax Identification document uploaded</label>
-                <select class="form-select" id="document_tax_identification_number"
-                        name="document_tax_identification_number" aria-label="Default select example" required>
+                <select class="form-select" id="TaxIdentification"
+                        name="TaxIdentification" aria-label="Default select example" required>
                     <option selected>-- document_tax_identification --</option>
                     <option value="1">Yes</option>
                     <option value="0">No</option>
@@ -223,7 +206,7 @@
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">City Registration document uploaded</label>
-                <select class="form-select" id="document_city_registration" name="document_city_registration"
+                <select class="form-select" id="CityRegistration" name="CityRegistration"
                         aria-label="Default select example" required>
                     <option selected>-- document_city_registration --</option>
                     <option value="1">Yes</option>
@@ -232,7 +215,7 @@
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">Matriculation paper uploaded</label>
-                <select class="form-select" id="document_matriculation_number" name="document_matriculation_number"
+                <select class="form-select" id="MatriculationNumber" name="MatriculationNumber"
                         aria-label="Default select example" required>
                     <option selected>-- document_matriculation --</option>
                     <option value="1">Yes</option>
@@ -241,9 +224,18 @@
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">Do you have Social security number</label>
-                <select class="form-select" id="document_social_security_number" name="document_social_security_number"
+                <select class="form-select" id="SocialSecurity" name="SocialSecurity"
                         aria-label="Default select example" required>
                     <option selected>-- document_social_security_number --</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">Resident permit uploaded</label>
+                <select class="form-select" id="VisaResidentPermit"
+                        name="VisaResidentPermit" aria-label="Default select example" required>
+                    <option selected>-- document_visa_or_resident_permit --</option>
                     <option value="1">Yes</option>
                     <option value="0">No</option>
                 </select>
