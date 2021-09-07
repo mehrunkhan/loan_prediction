@@ -4,7 +4,7 @@ import pickle
 import numpy as np
 
 app = Flask(__name__)
-model = pickle.load(open('trained_models/xgbc_model.sav', 'rb'))
+model = pickle.load(open('trained_models/forest_model.sav', 'rb'))
 
 
 @app.route('/')
